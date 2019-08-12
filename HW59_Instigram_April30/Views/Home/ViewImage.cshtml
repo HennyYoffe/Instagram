@@ -1,0 +1,19 @@
+﻿@using HW59_Instigram_April30
+@using ClassLibrary2
+@model Image
+
+@{
+    ViewData["Title"] = "View Image";
+}
+
+
+<div class="col-md-9">
+
+    <div class="thumbnail">
+        <h2>@Model.Title</h2>
+        <img class="img-responsive" src="/UploadedFiles/@Model.FileName" alt="" height='300' width='450'>
+        <div class="caption-full">         
+            <h4 class="pull-right">Likes: @Model.Like</h4>
+        </div>
+    </div>
+</div>
